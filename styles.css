@@ -14,7 +14,7 @@ header{
 #menu{
     padding: 1rem;
     background-color: white;
-    text-align: center;
+    text-align: left;
     border-radius: 20px;
     flex-direction: column;
     width: 30%;
@@ -41,6 +41,7 @@ header{
     text-align: left;
 }
 #textmedia{
+    display: flex;
     margin: 0.5rem;
     text-align: left;
 }
