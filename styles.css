@@ -1,0 +1,46 @@
+*{
+    margin: 0; padding: 0;
+}
+body{
+    background-color: blueviolet;
+    text-align: center;
+    align-items: center;
+    
+}
+header{
+    color: white;
+    text-align: center;
+}
+#menu{
+    padding: 1rem;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+
+}
+#topmenu{
+    margin: 0.5rem;
+    display: flex;
+}
+#nota{
+    text-align: left;
+}
+#inputtxt{
+    align-items: center;
+}
+#textearea{
+    margin: 0.5rem;
+    display: flex;
+    width: auto;
+}
+#calcmediabut{
+    margin: 0.5rem;
+    text-align: left;
+}
+#textmedia{
+    margin: 0.5rem;
+    text-align: left;
+}
