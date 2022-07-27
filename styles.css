@@ -19,7 +19,7 @@ header{
     flex-direction: column;
     width: 30%;
     margin: auto;
-
+    min-width: 321px;
 }
 #topmenu{
     margin: 0.5rem;
