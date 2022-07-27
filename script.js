@@ -15,6 +15,7 @@ var anotas = []
 var media = 0
 var btnadd = document.querySelector("#addbuton")
 var btcalcm = document.querySelector("#calcmediabut")
+var reset = document.querySelector("#reset")
 var input = document.querySelector("#inputtxt")
 var textta = document.querySelector("#textta")
 var resultmed = document.querySelector("#resultmedia")
@@ -26,9 +27,24 @@ btcalcm.addEventListener("click",() => {
     anotas = []
 })
 btnadd.addEventListener("click",() => { 
+    var confirm = 0
+    confirm = parseFloat(input.value.replace(',', '.'))
+    console.log(confirm)
+    if((0 <= confirm)&&(confirm<=10)){    
         anotas.push(input.value)
         console.log(anotas)
         textta.value = `${textta.value}\n A nota ${cont} foi ${input.value}`
         input.value = ""
         cont++
+    }else {
+        alert("Por favor, digite uma nota valida!!!")
+    }
+})
+reset.addEventListener("click",() => {
+    anotas = []
+    media = 0
+    cont = 1
+    input.value = ""
+    textta.value = ""
+    resultmed.innerText = ""
 })
