@@ -30,7 +30,8 @@ btnadd.addEventListener("click",() => {
     var confirm = 0
     confirm = parseFloat(input.value.replace(',', '.'))
     console.log(confirm)
-    if((0 <= confirm)&&(confirm<=10)){    
+    var h = isNaN(input.value.replace(',', '.'))
+    if((0 <= confirm)&&(confirm<=10)&&(h != true)){    
         anotas.push(input.value)
         console.log(anotas)
         textta.value = `${textta.value}\n A nota ${cont} foi ${input.value}`
